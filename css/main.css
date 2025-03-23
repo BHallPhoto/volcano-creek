@@ -129,7 +129,7 @@ body {
 }
 
 .business-title {
-  background: url("../assets/bg2.jpg");
+  background-image: url("../assets/bg2.jpg");
   background-position: 0% 50%;
   height: 100%;
 }
