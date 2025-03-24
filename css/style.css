@@ -1,179 +1,179 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 100%;
-  height: 100%;
+    font-size: 100%;
+    height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background: url(../assets/bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url(../assets/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .montserrat-regular {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .alex-brush-regular {
-  font-family: "Alex Brush", cursive;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "Alex Brush", cursive;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* End of Defaults*/
 
 .container {
-  min-height: 100vh;
-  position: relative;
+    min-height: 100vh;
+    position: relative;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  font-size: 3rem;
-  padding-top: 6vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 3rem;
+    padding-top: 6vw;
 }
 
 .header h1 {
-  color: rgba(40, 40, 40, 1);
-  text-shadow: 2px 2px 3px rgba(217, 243, 255, 0.5);
+    color: rgba(40, 40, 40, 1);
+    text-shadow: 2px 2px 3px rgba(217, 243, 255, 0.5);
 }
 .header span {
-  color: rgba(40, 40, 40, 1);
-  text-transform: uppercase;
-  font-weight: 600;
-  position: relative;
-  top: -80px;
+    color: rgba(40, 40, 40, 1);
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: -80px;
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 450px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 450px;
 }
 
 a, a:visited {
-  color: rgba(217, 243, 255, 0.5);
-  transition: .2s ease-in-out;
+    color: rgba(217, 243, 255, 0.5);
+    transition: .2s ease-in-out;
 }
 
 a:hover {
-  /* color: rgba(217, 243, 255, 0.904); */
-  transform: scale(1.125);
+    /* color: rgba(217, 243, 255, 0.904); */
+    transform: scale(1.125);
 }
 
 a:active {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 .logging, .trucking {
-  border-radius: 5px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(40, 40, 40, 0.3);
-  margin: 20px 20px;
-  height: 200px;
-  width: 500px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(40, 40, 40, 0.3);
+    margin: 20px 20px;
+    height: 200px;
+    width: 500px;
 }
 
 .logging:hover, .trucking:hover {
-  box-shadow: 0px 0px 5px 2px rgba(175, 175, 175, 0.5);
-  background: rgba(40, 40, 40, 0.6);
+    box-shadow: 0px 0px 5px 2px rgba(175, 175, 175, 0.5);
+    background: rgba(40, 40, 40, 0.6);
 }
 
 .footer {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgb(29, 29, 29);
-  /* height: 400px; */
-  width: 100%;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(29, 29, 29);
+    /* height: 400px; */
+    width: 100%;
 }
 
 .social > h2 {
-  width: 100%;
-  margin: 20px auto 30px auto;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 1.8rem;
-  text-align: center;
-  color: rgb(0,131,144);
-  text-transform: uppercase;
+    width: 100%;
+    margin: 20px auto 30px auto;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    color: rgb(0,131,144);
+    text-transform: uppercase;
 }
 
 .icons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .fb, .insta {
-  position: relative;
-  top: -15px;
-  padding: 0 12px 20px 12px;
+    position: relative;
+    top: -15px;
+    padding: 0 12px 20px 12px;
 }
 
 .info {
-  font-weight: 400;
-  font-size: 2rem;
-  color: rgb(0,131,144);
-  text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(0,131,144);
+    text-align: center;
 }
 .email-us {
-  font-size: 2rem;
-  font-weight: 300;
+    font-size: 2rem;
+    font-weight: 300;
 }
 .info {
-  font-size: 1rem;
-  text-decoration: none;
+    font-size: 1rem;
+    text-decoration: none;
 }
 .info a {
-  text-decoration: none;
-  font-weight: 300;
+    text-decoration: none;
+    font-weight: 300;
 }
 .addy {
-  color: rgba(217, 243, 255, 0.5);
-  font-size: 1.125rem;
-}
+    color: rgba(217, 243, 255, 0.5);
+    font-size: 1.125rem;
+    }
 
 .cp {
-  color: rgba(217, 243, 255, 0.5);
-  font-size: .85rem;
-  line-height: .6;
-  padding: 10px 0 10px 0;
-  text-align: center;
+    color: rgba(217, 243, 255, 0.5);
+    font-size: .85rem;
+    line-height: .6;
+    padding: 10px 0 10px 0;
+    text-align: center;
 }
 
 .heart {
-  color: rgb(255, 136, 0)
+    color: rgb(255, 136, 0)
 }
 
 @media only screen and (max-width: 464px) {
-  .header {
-    font-size: 2rem;
-  }
-  .header span {
-    font-size: 1.8rem;
-    position: relative;
-    top: -40px;
-  }
-  .cp {
-    padding-top: 0px;
-    line-height: 1;
-  }
+    .header {
+        font-size: 2rem;
+    }
+    .header span {
+        font-size: 1.8rem;
+        position: relative;
+        top: -40px;
+    }
+    .cp {
+        padding-top: 0px;
+        line-height: 1;
+    }
 }
