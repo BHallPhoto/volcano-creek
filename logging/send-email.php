@@ -31,4 +31,4 @@ $mail->Body = $message;
 
 $mail->send();
 
-echo "email sent";
+echo "Hi";
