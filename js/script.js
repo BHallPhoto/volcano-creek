@@ -49,6 +49,6 @@ openOrClosed(day, hour);
 
 // Telephone add dashes and re-insert innertText
 
-document.getElementById("msgForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-})
+// document.getElementById("msgForm").addEventListener("submit", (e) => {
+//   e.preventDefault();
+// })
