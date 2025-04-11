@@ -233,14 +233,24 @@ body {
   	line-height: 1px;
 }
 
-.objective p, .experience p, .service-area p {
+.objective p, .experience p, .service-area p, .servicing p, .reliability p {
   	font-size: 1rem;
   	text-indent: 30px;
-  	padding: 0 40px 50px 40px;
+  	padding: 0 40px;
+}
+
+.objective p:last-child, .experience p:last-child, .service-area p:last-child, .servicing p:last-child, .reliability p:last-child {
+	padding-bottom: 50px;
 }
 
 .objective h2, .experience h2, .service-area h2 {
   	padding-left: 40px;
+}
+
+.servicing img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .objective img, .service-area img {
@@ -249,7 +259,7 @@ body {
   	margin-left: 20px;
 }
 
-.experience img {
+.experience img, .reliability img {
   	max-width: 350px;
   	float: left;
   	margin-right: 20px;
@@ -438,7 +448,7 @@ details .clsd {
   	.objective img, .experience img, .service-area img {
     	float: inherit;
     	max-width: 100%;
-    	padding: 0 10px;
+    	/* padding: 0 10px; */
     	margin: 0 auto;
   	}
 
