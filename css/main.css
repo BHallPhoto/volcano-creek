@@ -123,10 +123,18 @@ body {
 /* End of Header and Nav */
 
 /* Business Title and intro */
-.title {
+.logging-title {
   	background-color: var(--dark-text-bg);
   	height: 600px;
-	@media (max-width: 840px) {
+	/* @media (max-width: 840px) {
+		height: 600px;
+	} */
+}
+
+.trucking-title {
+	background-color: var(--dark-text-bg);
+	height: 600px;
+	@media (max-width: 768px) {
 		height: 750px;
 	}
 }
@@ -231,6 +239,9 @@ body {
   	font-size: 2.5rem;
   	padding-left: 20px;
   	line-height: 1px;
+	@media (max-width: 768px) {
+		font-size: 2.25rem;
+	}
 }
 
 .objective p,
@@ -467,11 +478,11 @@ details .clsd {
     	margin: 0 auto;
   	}
 
-  	.description-header {
+  	.description-header-logging, .description-header-trucking {
     	padding-top: 50px;
   	}
 
-  	.description-header h2 {
+  	.description-header-logging h2, .description-header-trucking h2 {
     	font-size: 1.85rem;
   	}
 
