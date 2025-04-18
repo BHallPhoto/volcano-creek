@@ -87,7 +87,7 @@ body {
 }
 
 .container ul {
-  	display: block;
+  	/* display: block; */
   	text-align: center;
   	padding: 0;
   	margin: 0;
@@ -105,12 +105,27 @@ body {
   	padding: 4px 0;
 }
 
+.display-fix ul {
+	/* display: unset; */
+}
+.display-fix ul li {
+	margin: 0;
+}
+
+.file-field {
+	padding: 0 .75rem;
+}
+
 .container a {
   	line-height: 1.8rem;
   	color: var(--secondary-bg);
   	font-size: 1rem;
   	text-decoration: none;
   	text-transform: uppercase;
+}
+
+.objective, .experience, .servicing, .reliability {
+  	margin-bottom: 50px;
 }
 
 .navi li:hover {
@@ -275,7 +290,8 @@ body {
 }
 
 .objective img,
-.service-area img {
+.service-area img,
+.reducing-wildfires img {
   	max-width: 450px;
   	float: right;
   	margin-left: 20px;
@@ -313,6 +329,15 @@ input[type=email]:not(.browser-default):focus:not([readonly])+label,
 input[type=tel]:not(.browser-default):focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label {
   	color: var(--form-focus);
+}
+
+.two-form-field-div {
+	width: 50%;
+}
+
+.two-form-field {
+	display: flex;
+	flex-direction: row;
 }
 
 .btn {
@@ -471,7 +496,8 @@ details .clsd {
   	.objective img,
 	.experience img,
 	.service-area img,
-	.reliability img {
+	.reliability img,
+	.reducing-wildfires img {
     	float: inherit;
     	max-width: 100%;
     	/* padding: 0 10px; */

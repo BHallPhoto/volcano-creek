@@ -34,6 +34,127 @@
         </div>
     </header>
 
+    <section class="application" id="application">
+        <div class="container form-container">
+            <h1>Join Our Team</h1>
+            <p>At Volcano Creek, we are always looking for talented individuals to join our team. If you are interested in a career with us, please fill out the application form below.</p>
+            <form action="submit_application.php" method="POST" class="application-form">
+                <div class="row two-form-field">
+                    <div class="input-field col s12 two-form-field-div">
+                        <input id="first-name" type="text" class="validate" name="first-name" required>
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div class="input-field col s12 two-form-field-div">
+                        <input id="lasnt-name" type="text" class="validate" name="lasnt-name" required>
+                        <label for="lasnt-name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="address" type="text" class="validate" name="address" required>
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+                <div class="row two-form-field">
+                    <div class="input-field col s12 two-form-field-div">
+                        <input id="city" type="text" class="validate" name="city" required>
+                        <label for="city">City</label>
+                    </div>
+                    <div class="input-field col s12 display-fix">
+                        <select>
+                            <option value="" class="select-color" disabled selected>Select State</option>
+                            <option value="AL">Alabama (AL)</option>
+                            <option value="AK">Alaska (AK)</option>
+                            <option value="AZ">Arizona (AZ)</option>
+                            <option value="AR">Arkansas (AR)</option>
+                            <option value="CA">California (CA)</option>
+                            <option value="CO">Colorado (CO)</option>
+                            <option value="CT">Connecticut (CT)</option>
+                            <option value="DE">Delaware (DE)</option>
+                            <option value="DC">District Of Columbia (DC)</option>
+                            <option value="FL">Florida (FL)</option>
+                            <option value="GA">Georgia (GA)</option>
+                            <option value="HI">Hawaii (HI)</option>
+                            <option value="ID">Idaho (ID)</option>
+                            <option value="IL">Illinois (IL)</option>
+                            <option value="IN">Indiana (IN)</option>
+                            <option value="IA">Iowa (IA)</option>
+                            <option value="KS">Kansas (KS)</option>
+                            <option value="KY">Kentucky (KY)</option>
+                            <option value="LA">Louisiana (LA)</option>
+                            <option value="ME">Maine (ME)</option>
+                            <option value="MD">Maryland (MD)</option>
+                            <option value="MA">Massachusetts (MA)</option>
+                            <option value="MI">Michigan (MI)</option>
+                            <option value="MN">Minnesota (MN)</option>
+                            <option value="MS">Mississippi (MS)</option>
+                            <option value="MO">Missouri (MO)</option>
+                            <option value="MT">Montana (MT)</option>
+                            <option value="NE">Nebraska (NE)</option>
+                            <option value="NV">Nevada (NV)</option>
+                            <option value="NH">New Hampshire (NH)</option>
+                            <option value="NJ">New Jersey (NJ)</option>
+                            <option value="NM">New Mexico (NM)</option>
+                            <option value="NY">New York (NY)</option>
+                            <option value="NC">North Carolina (NC)</option>
+                            <option value="ND">North Dakota (ND)</option>
+                            <option value="OH">Ohio (OH)</option>
+                            <option value="OK">Oklahoma (OK)</option>
+                            <option value="OR">Oregon (OR)</option>
+                            <option value="PA">Pennsylvania (PA)</option>
+                            <option value="RI">Rhode Island (RI)</option>
+                            <option value="SC">South Carolina (SC)</option>
+                            <option value="SD">South Dakota (SD)</option>
+                            <option value="TN">Tennessee (TN)</option>
+                            <option value="TX">Texas (TX)</option>
+                            <option value="UT">Utah (UT)</option>
+                            <option value="VT">Vermont (VT)</option>
+                            <option value="VA">Virginia (VA)</option>
+                            <option value="WA">Washington (WA)</option>
+                            <option value="WV">West Virginia (WV)</option>
+                            <option value="WI">Wisconsin (WI)</option>
+                            <option value="WY">Wyoming (WY)</option>
+                        </select>
+                        <label for="state">State</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" name="email" required>
+                        <label for="email">E-Mail</label>
+                    </div>
+                </div>
+                <div class="row two-form-field">
+                    <div class="input-field col s12 two-form-field-div">
+                        <input id="tel" type="tel" class="validate" name="tel" required>
+                        <label for="tel">Telephone</label>
+                    </div>
+                    <div class="input-field col s12 two-form-field-div">
+                        <input id="birthday" type="text" class="datepicker" name="birthday" required>
+                        <label for="birthday">Birthday</label>
+                    </div>
+                </div>
+
+
+                <form action="#" class="file">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload Resume in .PDF .DOC .DOCX format">
+                         </div>
+                    </div>
+                </form>
+
+                <div class="input-field center">
+                    <button class="btn waves-effect waves-light" type="submit" for="msgForm">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="social">
             <h2>Social</h2>
@@ -61,5 +182,16 @@
         </div>
     </footer>
     
+    <script src="../js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems);
+        });
+    </script>
 </body>
 </html>
