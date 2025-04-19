@@ -112,10 +112,6 @@ body {
 	margin: 0;
 }
 
-.file-field {
-	padding: 0 .75rem;
-}
-
 .container a {
   	line-height: 1.8rem;
   	color: var(--secondary-bg);
@@ -304,14 +300,14 @@ body {
   	margin-right: 20px;
 }
 
+.application {
+	/* padding-bottom: 30px; */
+}
+
 .form-container {
   	width: 80%;
   	max-width: 700px;
   	margin: 0 auto;
-}
-
-.input-field {
-  	width: 100%;
 }
 
 .input-field .prefix.active {
@@ -333,11 +329,30 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 .two-form-field-div {
 	width: 50%;
+	@media (max-width: 840px) {
+		width: 100%;
+	}
 }
 
 .two-form-field {
 	display: flex;
 	flex-direction: row;
+	@media (max-width: 840px) {
+		flex-wrap: wrap;
+	}
+}
+
+.row .col {
+	@media (max-width: 840px) {
+		float: none;
+	}
+}
+
+.row .col.s12 {
+	margin-right: auto;
+	@media (max-width: 840px) {
+		width: 80%;
+	}
 }
 
 .btn {
