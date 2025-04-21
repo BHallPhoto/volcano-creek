@@ -156,6 +156,9 @@ body {
 .logging-bg {
 	background-image: url(../assets/logging-bg.jpg);
 }
+.careers-bg {
+	background-image: url(../assets/career-bg.jpg);
+}
 
 .business-title {
   	/* background-image: url(../assets/logging-bg.jpg); */
@@ -259,7 +262,8 @@ body {
 .experience p,
 .service-area p,
 .servicing p,
-.reliability p {
+.reliability p,
+.reducing-wildfires p {
   	font-size: 1rem;
   	text-indent: 30px;
   	padding: 0 40px;
@@ -269,7 +273,8 @@ body {
 .experience p:last-child,
 .service-area p:last-child,
 .servicing p:last-child,
-.reliability p:last-child {
+.reliability p:last-child,
+.reducing-wildfires p:last-child {
 	padding-bottom: 50px;
 }
 
@@ -298,10 +303,6 @@ body {
   	max-width: 450px;
   	float: left;
   	margin-right: 20px;
-}
-
-.application {
-	/* padding-bottom: 30px; */
 }
 
 .form-container {
@@ -342,16 +343,16 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 	}
 }
 
-.row .col {
+#application .row .col {
 	@media (max-width: 840px) {
 		float: none;
 	}
 }
 
-.row .col.s12 {
+#application .row .col.s12 {
 	margin-right: auto;
 	@media (max-width: 840px) {
-		width: 80%;
+		width: 90%;
 	}
 }
 
