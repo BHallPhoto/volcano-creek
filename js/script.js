@@ -52,3 +52,25 @@ openOrClosed(day, hour);
 // document.getElementById("msgForm").addEventListener("submit", (e) => {
 //   e.preventDefault();
 // })
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  M.FormSelect.init(elems);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.datepicker');
+  M.Datepicker.init(elems, {
+    format: 'mm/dd/yyyy',
+    yearRange: [1940, new Date().getFullYear()],
+    defaultDate: new Date(2000, 0, 1),
+    setDefaultDate: true
+  });
+});
+
+const bday = document.getElementById("birthday");
+bday.addEventListener("click", (e) => {
+  const bdayInput = document.querySelector(".datepicker-done");
+  bdayInput.addEventListener("click", (e) => {
+    bday.scrollIntoView({behavior: "smooth", block: "center"});
+  })  
+})

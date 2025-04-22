@@ -54,15 +54,15 @@
         <div class="container form-container">
             <h1>Join Our Team</h1>
             <p>At Volcano Creek, we are always looking for talented individuals to join our team. If you are interested in a career with us, please fill out the application form below.</p>
-            <form action="submit_application.php" method="POST" class="application-form">
+            <form action="#" method="POST" class="application-form">
                 <div class="row two-form-field">
                     <div class="input-field col s12 two-form-field-div">
                         <input id="first-name" type="text" class="validate" name="first-name" required>
                         <label for="first-name">First Name</label>
                     </div>
                     <div class="input-field col s12 two-form-field-div">
-                        <input id="lasnt-name" type="text" class="validate" name="lasnt-name" required>
-                        <label for="lasnt-name">Last Name</label>
+                        <input id="last-name" type="text" class="validate" name="last-name" required>
+                        <label for="last-name">Last Name</label>
                     </div>
                 </div>
                 <div class="row">
@@ -77,7 +77,7 @@
                         <label for="city">City</label>
                     </div>
                     <div class="input-field col s12 display-fix">
-                        <select>
+                        <select id="state" name="state" required> 
                             <option value="" class="select-color" disabled selected>Select State</option>
                             <option value="AL">Alabama (AL)</option>
                             <option value="AK">Alaska (AK)</option>
@@ -137,7 +137,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="email" type="email" class="validate" name="email" required>
-                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        <span class="helper-text" data-error="wrong" data-success="right">Verify</span>
                         <label for="email">E-Mail</label>
                     </div>
                 </div>
@@ -154,17 +154,15 @@
 
                 <div class="row">
                     <div class="input-field col s12">
-                        <form action="#" class="file">
-                            <div class="file-field input-field">
-                                <div class="btn">
-                                    <span>Resume</span>
-                                    <input type="file">
-                                </div>
-                                <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text" placeholder="Upload in .PDF .DOC or .DOCX format">
-                                 </div>
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>Resume</span>
+                                <input type="file">
                             </div>
-                        </form>
+                             <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload in .PDF .DOC or .DOCX format">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -255,14 +253,7 @@
     <script src="../js/materialize.min.js"></script>
     <script src="../js/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems);
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.datepicker');
-            var instances = M.Datepicker.init(elems);
-        });
+
     </script>
 </body>
 </html>
