@@ -134,20 +134,8 @@ body {
 /* End of Header and Nav */
 
 /* Business Title and intro */
-.logging-title {
+.logging-title, .trucking-title, .career-title {
   	background-color: var(--dark-text-bg);
-  	height: 600px;
-	/* @media (max-width: 840px) {
-		height: 600px;
-	} */
-}
-
-.trucking-title {
-	background-color: var(--dark-text-bg);
-	height: 600px;
-	@media (max-width: 768px) {
-		height: 750px;
-	}
 }
 
 .trucking-bg {
@@ -159,6 +147,9 @@ body {
 .careers-bg {
 	background-image: url(../assets/career-bg.jpg);
 }
+.box {
+	backdrop-filter: blur(3px);
+}
 
 .business-title {
   	/* background-image: url(../assets/logging-bg.jpg); */
@@ -168,14 +159,14 @@ body {
   	height: 100%;
 }
 
-.description-header-logging, .description-header-trucking {
+.description-header-logging, .description-header-trucking, .description-header-career {
   	text-transform: uppercase;
   	letter-spacing: 6px;
   	text-align: center;
-  	padding-top: 100px;
+  	padding: 50px 0;
 }
 
-.description-header-trucking h2, .description-header-logging h2 {
+.description-header-trucking h2, .description-header-logging h2, .description-header-career h2 {
 	/* font-family: "Montserrat", sans-serif; */
 	/* font-family: "Raleway", sans-serif; */
   	font-family: "Cinzel", serif;
@@ -187,9 +178,21 @@ body {
 	margin: 0 0 15px 0;
 }
 
+.description-header-career h3 {
+	font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	font-size: 1.25rem;
+	color: var(--main-bg);
+	font-weight: 600;
+	text-shadow: 1px 1px 3px var(--dark-text-bg);
+	margin: 0 0 15px 0;
+}
+
 .description {
   	padding-top: 34px;
 }
+
+
 
 .description p {
   	font-size: 1rem;
@@ -197,6 +200,16 @@ body {
   	letter-spacing: 3px;
   	color: var(--main-bg);
   	text-transform: none;
+	z-index: 2;
+}
+
+.career-desc {
+	padding-top: 10px;
+}
+
+.career-desc p {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .over-img-btn {
